@@ -20,7 +20,10 @@ public class Main {
                 case 1 -> adicionarPagamento();
                 case 2 -> editarPagamento();
                 case 3 -> excluirPagamento();
-                case 4 -> listarPagamentos();
+                case 4 -> {
+                    System.out.println("Listando pagamentos...");
+                    listarPagamentos();
+                }
                 case 5 -> verificarPagamentosPendentes();
                 case 6 -> {
                     System.out.println("Saindo do sistema. Até logo!");

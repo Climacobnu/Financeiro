@@ -16,6 +16,7 @@ public class GerenciadorPagamentos {
 
     public void adicionarPagamento(Pagamento pagamento) {
         pagamentos.add(pagamento);
+        System.out.println("Pagamento adicionado: " + pagamento);  // Adicione este log para verificar
     }
 
     public boolean removerPagamento(String descricao) {
@@ -32,14 +33,17 @@ public class GerenciadorPagamentos {
     }
 
     public void listarPagamentos() {
+        System.out.println("Listando pagamentos...");
         if (pagamentos.isEmpty()) {
             System.out.println("Nenhum pagamento cadastrado.");
-            return;
-        }
-        for (Pagamento p : pagamentos) {
-            System.out.println(p);
+        } else {
+            for (Pagamento p : pagamentos) {
+                System.out.println(p);
+            }
         }
     }
+
+    
 
     public void verificarPagamentosPendentes() {
         LocalDate hoje = LocalDate.now();
@@ -55,5 +59,7 @@ public class GerenciadorPagamentos {
         if (!encontrouPendentes) {
             System.out.println("Nenhum pagamento pendente.");
         }
+        
     }
+    
 }

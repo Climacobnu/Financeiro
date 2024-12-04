@@ -43,7 +43,10 @@ public class Pagamento {
 
     @Override
     public String toString() {
-        return "Pagamento: " + descricao + ", Valor: " + valor + ", Vencimento: " + dataVencimento + ", Pago: " + statusPago;
+        return "Descrição: " + descricao + 
+               ", Valor: " + valor +
+               ", Vencimento: " + dataVencimento +
+               ", Status: " + (statusPago ? "Pago" : "Pendente");
     }
     
 }
