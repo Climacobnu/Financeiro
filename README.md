@@ -7,3 +7,9 @@ document.write("hello")
 Leandro Climaco
 </p>
 </details>
+
+
+  | Header | Header | Header |
+  |--------|--------|--------|
+  | Cell | Cell | Cell |
+  | Cell | Cell | Cell |
